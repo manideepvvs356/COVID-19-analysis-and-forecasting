@@ -1,0 +1,147 @@
+
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+header {
+  position: relative;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+nav {
+  
+  height: 10vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding-right: 60px;
+}
+.logo {
+  flex: 1;
+  margin-left: 40px;
+}
+
+.logo h1 {
+  letter-spacing: 2px;
+  font-size: 30px;
+  color:white;
+}
+.list-items {
+  flex: 2;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.list {
+  list-style: none;
+  
+}
+
+.link {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: 0.4s background;
+}
+
+.link:hover {
+  color: #ba4c4a;
+}
+
+.main {
+  
+  height: 90vh;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.main-left {
+  height: 100%;
+  width: 50%;
+}
+
+
+.text {
+  
+  padding-top: 32%;
+}
+
+.text label {
+  font-size: 3vw;
+  letter-spacing: 10px;
+  font-weight: bold;
+  color:white;
+}
+
+.text input[type=submit] {
+  background-color: white;
+  border: 2px solid gray;
+  color: black;
+  padding: 8px 16px;
+  text-decoration: none;
+  margin: 8px 2px;
+  cursor: pointer;
+}
+.text input[type=submit]:hover{
+  background-color: green;
+  color: white;
+}
+.text input[type=file] {
+  background-color: white;
+  border:2px solid gray;
+  color: black;
+  padding: 8px 16px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+
+.right-bar {
+  position: absolute;
+  width: 60px;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  top: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.icons {
+  position: absolute;
+  bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.icon-btn {
+  margin-top: 20px;
+  background: white;
+  text-decoration: none;
+  color: grey;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  position: relative;
+}
+
+.icon-btn i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.search {
+  position: absolute;
+  color: white;
+  top: 25px;
+  font-size: 20px;
+}

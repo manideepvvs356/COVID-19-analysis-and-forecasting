@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+    />>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/falldetection.css') }}">
+	<style>
+	html,body {
+    width:100vw;
+    height: 100vh;
+    margin: 0;
+	top:50%;
+	left:50%;
+	background-image: url({{ url_for('static', filename='img/falldetection.png') }});
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+	}
+	</style>
+	<title> Fall detection</title>
+    </head>
+    <body>
+
+    <header>
+      <nav>
+        <div class="logo"><h1>CORONA</h1></div>
+        <ul class="list-items">
+          <li class="list"><a href="index.html" class="link">HOME</a></li>
+
+          <li class="list"><a href="peoplecount.html" class="link">people counter</a></li>
+
+          <li class="list"><a href="facemask.html" class="link">Facemask Detection</a></li>
+
+          <li class="list"><a href="#" class="link">Fall detecion</a></li>
+
+          <li class="list"><a href="#" class="link">Predict Future covid-19 cases</a></li>
+        </ul>
+      </nav>
+      <div class="main">
+        <div class="main-left">
+          <div class="text">
+		    <form action="/fallresult.html">
+            <label for="img">Upload video here!</label>
+            <input type="file" id="img" name="vid" accept="image/*">
+            <input type="submit">
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="right-bar">
+        <a class="search" href="https://www.youtube.com"><i class="fas fa-search"></i></a>
+        <div class="icons">
+          <a href="https://www.youtube.com" class="icon-btn"><i class="fab fa-youtube"></i></a>
+          <a href="#" class="icon-btn"><i class="fab fa-instagram"></i></a>
+          <a href="https://twitter.com/sai_vvs" class="icon-btn"><i class="fab fa-twitter"></i></a>
+          <a href="https://www.facebook.com/manideep.vvs/" class="icon-btn"><i class="fab fa-facebook"></i></a>
+        </div>
+      </div>
+ 
+    </header>
+	   
+		
+
+
+    </body>
+</html>
